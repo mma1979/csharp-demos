@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AppBusiness.Models;
+
+public class Truck
+{
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public int Year { get; set; }
+    public Truck(string make, string model, int year)
+    {
+        Make = make;
+        Model = model;
+        Year = year;
+    }
+    public override string ToString()
+    {
+        return $"{Year} {Make} {Model}";
+    }
+}

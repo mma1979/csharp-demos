@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AppBusiness\AppBusiness.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="ConsoleApp1">
       <HintPath>..\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll</HintPath>
     </Reference>

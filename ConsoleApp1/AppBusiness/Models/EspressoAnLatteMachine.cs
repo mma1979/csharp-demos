@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.Models;
+namespace AppBusiness.Models;
 
 public class EspressoAnLatteMachine:DrinkMachine, IEspressoMachine, ILatteMachine
 {
@@ -26,4 +26,6 @@ public class EspressoAnLatteMachine:DrinkMachine, IEspressoMachine, ILatteMachin
     {
         throw new NotImplementedException();
     }
+
+    public string Name { get; set; }
 }

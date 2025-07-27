@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.Models;
+namespace AppBusiness.Models;
 
 public class LatteMachine: DrinkMachine,ILatteMachine, IDisposable
 {
@@ -17,6 +17,11 @@ public class LatteMachine: DrinkMachine,ILatteMachine, IDisposable
         Console.WriteLine("Making latte...");
         // Logic to make latte
     }
+
+    public void NotInInterface()
+    {
+        Console.WriteLine("This method is not in the interface.");
+    }   
 
     public void Dispose()
     {
